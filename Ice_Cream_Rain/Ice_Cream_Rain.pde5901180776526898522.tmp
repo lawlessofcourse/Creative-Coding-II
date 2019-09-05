@@ -1,0 +1,36 @@
+//Creative Coding II 8/28/2019
+Drop[] drops = new Drop[100];
+int dim;
+
+void setup()
+{
+  colorMode(HSB);
+  size(1080, 720);
+  
+  for (int i = 0; i < drops.length; i++){
+    drops[i] = new Drop();
+  }
+}
+
+void draw()
+{
+  colorMode(HSB);
+  background(200, 300, 100);
+  stroke(140,200,300);
+  strokeWeight(20);
+  noFill();
+  rect(width, height, -width, -height);
+  textSize(32);
+  text("Jack Lawless", 20, 50);
+  for(int i = 0; i < drops.length; i++){
+    drops[i].fall();
+    drops[i].show();
+  }
+  //noFill();
+  //stroke(220, 300, 250);
+  //strokeWeight(6);
+  //rect(0, 0, width, height);
+  
+  
+ 
+}
