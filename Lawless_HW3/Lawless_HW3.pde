@@ -12,7 +12,7 @@ void setup()
   w = width/sparks.length;
   for(int i=0; i<sparks.length; i++)
   {
-    sparks[i] = new Sparkle(i*w,0,(float)random(1,25),(float)random(2,8));
+    sparks[i] = new Sparkle(i*w,0,(float)random(1,25),(float)random(1,3));
   }
   for(int i=0; i<bird.length;i++)
   {
