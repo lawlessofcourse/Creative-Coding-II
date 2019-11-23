@@ -49,7 +49,7 @@ void draw()
     isHurt=true;
     isIdle = false;
     isWalking= false;
-    dealDamage()
+    //dealDamage();
   }
   //if (checkCollision(myPlaya.w+myPlaya.x, myEnemy.x, 
   //  myPlaya.x, myEnemy.x+myEnemy.w, myPlaya.y+myPlaya.h, myEnemy.y, 
